@@ -1,0 +1,71 @@
+ /* .mat-drawer
+{ 
+  background-color:rgb(126, 96, 39);
+} */
+/* .containt
+{
+margin-left: 20px;
+
+}  */
+ 
+mat-sidenav
+{
+ width: 20%; 
+ 
+}
+
+.main-content
+{ 
+padding: 16px;
+}
+
+mat-sidenav-container
+{
+height: 100%;
+}
+.navbar,.mat-nav-list
+{
+justify-content: space-between;
+width: 20%;
+
+}
+
+mat-toolbar
+{
+position: fixed;
+top: 0%;
+}
+span
+{
+padding: 1rem;
+margin-left: 70%;
+}
+
+
+.data{
+    height: 30%;
+    width: 100%;
+    background-size: 90%;
+    background-position: center;  
+    background-image: url(../../assets/profile.png);
+    background-repeat: no-repeat;
+
+}
+
+.menu-list{
+    /* background-color:rgb(17, 17, 143); */
+    background-color:rgb(69, 69, 163);
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.menu-list:hover{
+    background-color:grey;
+}
+
+.child{
+    display: none;
+    margin-left: 10%;
+
+}

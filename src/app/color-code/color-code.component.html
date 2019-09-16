@@ -1,0 +1,27 @@
+<!-- <div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+      <mat-form-field>
+          <mat-label>Color Type</mat-label>
+          <mat-select>
+              <mat-option *ngFor="let color of maincolors" [value]="color.value">
+                  {{color.viewValue}}
+              </mat-option>
+          </mat-select>
+      </mat-form-field>
+  </div>
+</div> -->
+
+
+
+<div style="margin-top: 50px;margin-bottom: 50px; text-align: center; ">
+    
+    <label for="name" class="control-label"><b>COLOR-CODE AMOUNT:</b></label>
+    &nbsp;
+    <mat-form-field floatLable="auto" appearance="outline" >
+      <input matInput placeholder="COLOR-CODE">
+    </mat-form-field>
+    &nbsp;<button mat-raised-button color="primary">ADD</button>
+    <router-outlet></router-outlet>
+</div>
+

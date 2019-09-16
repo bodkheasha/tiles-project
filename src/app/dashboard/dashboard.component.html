@@ -1,0 +1,37 @@
+<mat-sidenav-container fullscreen>
+      <mat-sidenav [(opened)]="opened" mode="side" position="start">      
+            <div class="data" ></div>
+            <div style="background-color:rgb(69, 69, 163); height: 70%;"> 
+                <mat-list>
+                    <div class="menu-list" > <mat-list-item role="listitem" (click)="set(0)" style="color: white;">PRODUCTION</mat-list-item></div>
+                    <div class="menu-list"> <mat-list-item role="listitem" (click)="set(1)" style="color: white;">CRUMB B</mat-list-item></div>
+                    <div class="menu-list"> <mat-list-item role="listitem" (click)="set(2)" style="color: white;">SOLUTION B</mat-list-item></div>
+                    <div class="menu-list"> <mat-list-item role="listitem" (click)="set(3)" style="color: white;">MOULD R</mat-list-item></div>
+                    <div class="parent">
+                        <div class="menu-list"> <mat-list-item role="listitem" style="color: white;">COLORMASTER<mat-icon>keyboard_arrow_down</mat-icon></mat-list-item></div>
+                           <mat-list class="child">
+                                <div class="menu-list" ><mat-list-item role="listitem" (click)="set(4)" style="color: white;"><mat-icon>keyboard_arrow_right</mat-icon>ColorName</mat-list-item> </div>
+                                <div class="menu-list"><mat-list-item role="listitem" (click)="set(5)" style="color: white;"><mat-icon>keyboard_arrow_right</mat-icon>ColorCode</mat-list-item> </div>
+                            </mat-list>    
+                    </div>
+                    <div class="menu-list"> <mat-list-item role="listitem" (click)="set(6)" style="color: white;">PAYROLL</mat-list-item></div>
+                </mat-list>
+            </div> 
+        </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <div>
+                <button mat-icon-button (click)="opened=!opened"><mat-icon>menu</mat-icon></button>Dashboard
+                  <span>ADIFLEX TYLES</span>
+                  <button mat-button class="align-self-end ml-auto" style="margin-left: 290px;"
+                  routerLink='/LoginComponent'><mat-icon>logout</mat-icon></button>
+            </div>
+        </mat-toolbar>
+    
+        <div class="main-content" style="margin-top:80px; margin-left:50px">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container> 
+   
